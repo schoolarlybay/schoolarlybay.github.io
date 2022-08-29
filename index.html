@@ -10,119 +10,144 @@
 </head>
 <style>
 .topic {
-   padding: .2rem .4rem;
+   position: relative;
+   padding: 1.6rem .8rem;
+   text-align: center;
    margin: .2rem;
    background-color: #fafafa;
    color: #212121;
    border-radius: .5rem;
    font-size: 2rem;
 }
+
+.topic-qoute {
+   position: absolute;
+   top: 120%;
+   left: 0;
+   padding: 1rem;
+   border-radius: .5rem;
+   display: inline-block;
+   background-color: #fff;
+   box-shadow: 0 0 .2rem #ddd;
+   text-align: left;
+   overflow: auto;
+   z-index: 1000;
+   opacity: 0;
+   pointer-events: none;
+   transition: .2s;
+   transition-delay: .5s;
+}
+
+.topic:hover .topic-qoute {
+   opacity: 1;
+   pointer-events: auto;
+}
 </style>
 <body>
    <div class="grid grid-cols-4">
       <div class="topic">
          <h2><a href="Topics/astronomy.html"><span class="material-symbols-rounded">auto_awesome</span> Astronomy</a></h2>
-         <span class="text-xl">"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." ―Carl Sagan</span> 
+         <span class="topic-qoute text-xl">"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." ―Carl Sagan</span> 
       </div>
       <div class="topic">
          <h2><a href="Topics/biography.html"><span class="material-symbols-rounded">menu_book</span> Biography</a></h2>
-         <span class="text-xl">"The choices you make today will be your biography tomorrow." -James Altucher</span>
+         <span class="topic-qoute text-xl">"The choices you make today will be your biography tomorrow." -James Altucher</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/biotech.html"><span class="material-symbols-rounded">biotech</span> Biotechnology</a></h2>
-         <span class="text-xl">"I'm very intrested in the impact of biotechnology on the way people live." -Lois Mcmaster Bujold</span>
+         <span class="topic-qoute text-xl">"I'm very intrested in the impact of biotechnology on the way people live." -Lois Mcmaster Bujold</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/botany.html"><span class="material-symbols-rounded">biotech</span> Botany</a></h2>
-         <span class="text-xl">"In almost every garden, the land is made better and so is the gardener." -Robert Rodale</span>
+         <span class="topic-qoute text-xl">"In almost every garden, the land is made better and so is the gardener." -Robert Rodale</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/chemistry.html"><span class="material-symbols-rounded">science</span> Chemistry</a></h2>
-         <span class="text-xl">"Chemistry begins in the stars. The stars are the source of the chemical elements, which are the building blocks of matter and the core of our subject."  -Peter Atkins</span>
+         <span class="topic-qoute text-xl">"Chemistry begins in the stars. The stars are the source of the chemical elements, which are the building blocks of matter and the core of our subject."  -Peter Atkins</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/computers.html"><span class="material-symbols-rounded">devices</span> Computers</a></h2>
-         <span class="text-xl">"No one messes around with a nerd’s computer and escapes unscathed." ―E.A. Bucchianeri</span>
+         <span class="topic-qoute text-xl">"No one messes around with a nerd’s computer and escapes unscathed." ―E.A. Bucchianeri</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/culture.html"><span class="material-symbols-rounded">diversity_1</span> Culture</a></h2>
-         <span class="text-xl">"The beauty of the world lies in the diversity of its people." -Unknown</span>
+         <span class="topic-qoute text-xl">"The beauty of the world lies in the diversity of its people." -Unknown</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/ecology.html"><span class="material-symbols-rounded">eco</span> Ecology</a></h2>
-         <span class="text-xl">"I love a challange and saving the planet seems like a good one." -Paul Staments</span>
+         <span class="topic-qoute text-xl">"I love a challange and saving the planet seems like a good one." -Paul Staments</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/economy.html"><span class="material-symbols-rounded">savings</span> Economy</a></h2>
-         <span class="text-xl">"We don't have to sacrifice a strong economy for a healthy enviroment." -Dennis Weaver <br><br> "The ultimate resource in economic development is people. It is people, not capital or raw materials that develop an economy." -Peter Drucker</span>
+         <span class="topic-qoute text-xl">"We don't have to sacrifice a strong economy for a healthy enviroment." -Dennis Weaver <br><br> "The ultimate resource in economic development is people. It is people, not capital or raw materials that develop an economy." -Peter Drucker</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/food.html"><span class="material-symbols-rounded">fastfood</span> Food</a></h2>
-         <span class="text-xl">"Food is our commmon ground, a universal experience." -James Beard</span>
+         <span class="topic-qoute text-xl">"Food is our commmon ground, a universal experience." -James Beard</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/geography.html"><span class="material-symbols-rounded">public</span> Geography</a></h2>
-         <span class="text-xl">"Without geography, you're nowhere." -Author Unknown</span>
+         <span class="topic-qoute text-xl">"Without geography, you're nowhere." -Author Unknown</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/geology.html"><span class="material-symbols-rounded">grass</span> Geology</a></h2>
-         <span class="text-xl">"Geology gave us the immensity of time and taught us how little of it our own species has occupied." -Stephen Jay Gould</span>
+         <span class="topic-qoute text-xl">"Geology gave us the immensity of time and taught us how little of it our own species has occupied." -Stephen Jay Gould</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/government.html"><span class="material-symbols-rounded">gavel</span> Government</a></h2>
-         <span class="text-xl">"The punishment suffered by the wise who refuse to take part in the government, is to live under the government of bad men." -Plato<br><br>"The government is lucky that people never think." -Adolf Hitler</span>
+         <span class="topic-qoute text-xl">"The punishment suffered by the wise who refuse to take part in the government, is to live under the government of bad men." -Plato<br><br>"The government is lucky that people never think." -Adolf Hitler</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/history.html"><span class="material-symbols-rounded">book</span> History</a></h2>
-         <span class="text-xl">"Those who cannot remember the past are condemned to repeat it." -George Santayana</span>
+         <span class="topic-qoute text-xl">"Those who cannot remember the past are condemned to repeat it." -George Santayana</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/industry.html"><span class="material-symbols-rounded">factory</span> Industry</a></h2>
-         <span class="text-xl">"Our industry does not respect tradition. It only respects innovation." -Satya Nadella</span>
+         <span class="topic-qoute text-xl">"Our industry does not respect tradition. It only respects innovation." -Satya Nadella</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/language.html"><span class="material-symbols-rounded">translate</span> Language</a></h2>
-         <span class="text-xl">"To learn a language is to have one more window to look at the world." -Chinese proverb</span>
+         <span class="topic-qoute text-xl">"To learn a language is to have one more window to look at the world." -Chinese proverb</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/lit.html"><span class="material-symbols-rounded">book</span> Literary Analysis</a></h2>
-         <span class="text-xl">"'Classic' - a book which people praise and don't read." -Mark Twain</span>
+         <span class="topic-qoute text-xl">"'Classic' - a book which people praise and don't read." -Mark Twain</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/machine-learning.html"><span class="material-symbols-rounded">code</span> Machine Learning</a></h2>
-         <span class="text-xl">"Hence paradoxically, as we accumalate more data and increase our computing power, events become wilder and more unexpected." -Yuval Noah Harari</span>
+         <span class="topic-qoute text-xl">"Hence paradoxically, as we accumalate more data and increase our computing power, events become wilder and more unexpected." -Yuval Noah Harari</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/oceanography.html"><span class="material-symbols-rounded">sailing</span> Oceanography</a></h2>
-         <span class="text-xl">"The edge of the sea is a strange and beautiful place." ―Rachel Carson<br><br>"In every outthrust headland, in every curving beach, in every grain of sand there is the story of the earth." ―Rachel Carson <br><br>"If a child is to keep alive his inborn sense of wonder, he needs the companionship of at least one adult who can share it, rediscovering with him the joy, excitement, and mystery of the world we live in." ―Rachel Carson</span>
+         <span class="topic-qoute text-xl">"The edge of the sea is a strange and beautiful place." ―Rachel Carson<br><br>"In every outthrust headland, in every curving beach, in every grain of sand there is the story of the earth." ―Rachel Carson <br><br>"If a child is to keep alive his inborn sense of wonder, he needs the companionship of at least one adult who can share it, rediscovering with him the joy, excitement, and mystery of the world we live in." ―Rachel Carson</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/philosophy.html"><span class="material-symbols-rounded">face</span> Philosophy</a></h2>
-         <span class="text-xl">"What is a friend? A single soul dwelling in two bodies." -Aristotle</span>
+         <span class="topic-qoute text-xl">"What is a friend? A single soul dwelling in two bodies." -Aristotle</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/physics.html"><span class="material-symbols-rounded">flight_takeoff</span> Physics</a></h2>
-         <span class="text-xl">"The most incomprehensible thing about the universe is that it is comprehensible." -Albert Einstein</span>
+         <span class="topic-qoute text-xl">"The most incomprehensible thing about the universe is that it is comprehensible." -Albert Einstein</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/politics.html"><span class="material-symbols-rounded">sports_kabaddi</span> Politics</a></h2>
-         <span class="text-xl">"Politics is the entertainment branch of industry." -Frank Zappa</span>
+         <span class="topic-qoute text-xl">"Politics is the entertainment branch of industry." -Frank Zappa</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/psychology.html"><span class="material-symbols-rounded">psychology</span> Psychology</a></h2>
-         <span class="text-xl">"It is not primarily our physical self that limit us but rather our mindset about our physical limits." -Ellen J. Langer</span>
+         <span class="topic-qoute text-xl">"It is not primarily our physical self that limit us but rather our mindset about our physical limits." -Ellen J. Langer</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/religion.html"><span class="material-symbols-rounded">accessibility</span> Religion</a></h2>
-         <span class="text-xl">"It is forbidden to decry other sects; the true believer gives honour to whatever in them is worthy of honour." -Ashoka The Great</span>
+         <span class="topic-qoute text-xl">"It is forbidden to decry other sects; the true believer gives honour to whatever in them is worthy of honour." -Ashoka The Great</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/transportation.html"><span class="material-symbols-rounded">local_shipping</span> Transportation</a></h2>
-         <span class="text-xl">"You can't understand a city without using it's public transportation system." -Erol Ozan</span>
+         <span class="topic-qoute text-xl">"You can't understand a city without using it's public transportation system." -Erol Ozan</span>
       </div>
       <div class="topic">
          <h2><a href="Topics/zoology.html"><span class="material-symbols-rounded">emoji_nature</span> Zoology</a></h2>
-         <span class="text-xl">"Having respect for animals makes us better humans." -Jane Goodall</span>
+         <span class="topic-qoute text-xl">"Having respect for animals makes us better humans." -Jane Goodall</span>
       </div>
    </div>
 </body>
