@@ -564,18 +564,24 @@ video {
   display: block;
 }
 
+<<<<<<< HEAD
 .grid {
   display: grid;
 }
 
+=======
+>>>>>>> 2dd82c54aaa3f37b9685a18a6b7cc9f09d0a5bae
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+<<<<<<< HEAD
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+=======
+>>>>>>> 2dd82c54aaa3f37b9685a18a6b7cc9f09d0a5bae
 .rounded-2xl {
   border-radius: 1rem;
 }
