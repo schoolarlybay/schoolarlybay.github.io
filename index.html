@@ -40,6 +40,8 @@
    box-shadow: 0 0 .2rem #ddd;
    text-align: left;
    font-family: "Comfortaa";
+   max-height: 15rem;
+   overflow: auto;
    z-index: 1000;
    opacity: 0;
    pointer-events: none;
@@ -52,12 +54,12 @@
    pointer-events: auto;
 }
 </style>
-<body class="px-6 bg-gradient-to-r from-rose-300 to-sky-300">
+<body class="bg-gradient-to-r from-rose-300 to-sky-300">
    <div class="m-12">
       <h1 class="m-2 mb-8 text-7xl text-center font-bold" style="font-family: 'Dancing Script'">The Schoolarly Bay</h1>
       <h2 class="m-2 text-3xl text-center font-semibold" style="font-family: 'Comfortaa'">A collection of works by adolescent scholars</h2>   
    </div>
-   <div class="grid grid-cols-4">
+   <div class="px-6 grid grid-cols-4">
       <div class="topic">
          <h2><a href="Topics/astronomy.html"><span class="material-symbols-rounded">auto_awesome</span> Astronomy</a></h2>
          <span class="topic-qoute text-xl">"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." ―Carl Sagan</span> 
@@ -163,5 +165,11 @@
          <span class="topic-qoute text-xl">"Having respect for animals makes us better humans." -Jane Goodall</span>
       </div>
    </div>
+   <footer class="py-4 pb-6 mt-24 bg-white text-center text-2xl">
+      <a href="https://squirrel-314.github.io/">Gold Rush</a> |
+      <a href="https://hillside-township.github.io/">Hillside Township</a> |
+      <a href="https://github.com/schoolarlybay/schoolarlybay.github.io">GitHub</a> |
+      <p class="inline-block">Copyright © <span id="currentTime">28/8/2022</span></p>
+   </footer>
 </body>
 </html>
